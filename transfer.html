@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+
+        <h1>Transfer Money</h1>
+
+        <input type="text" placeholder="Receiver"><br><br>
+        <input type="number" id="amt" placeholder="Amount"><br><br>
+
+        <button onclick="send()">Send</button>
+        <p id="msg"></p>
+
+        <script>
+        function send(){
+            var amt = document.getElementById("amt").value;
+                document.getElementById("msg").innerText = "₹" + amt + " sent successfully";
+                }
+                </script>
+
+                </body>
+                </html>
